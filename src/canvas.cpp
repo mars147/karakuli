@@ -1,10 +1,11 @@
 #include "canvas.h"
+#define STB_IMAGE_WRITE_IMPLEMENTATION
 #include "stb_image_write.h"
 #include <algorithm>
 #include <cmath>
 
 
-#define STB_IMAGE_WRITE_IMPLEMENTATION
+
 
 Canvas::Canvas(int width, int height) : width_(width), height_(height), data_(width * height * 3, 255) {}
 
